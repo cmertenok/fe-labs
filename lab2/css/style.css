@@ -1,0 +1,122 @@
+.phone {
+   margin: 20px;
+   width: 110px;
+   height: 180px;
+   border-radius: 10%;
+   border: solid 1px black;
+   background-color: #d7e4bd;
+}
+
+.point{
+    height: 15px;
+    width: 18px;
+    background-color: #3d2d50;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+/*Position*/
+
+.screen-position {
+    width: 98px;
+    height: 85px;
+    left: 5px;
+    top: 5px;
+    position: relative;
+    border-radius: 10%;
+    border: solid 1px black;
+    background-color: white;
+}
+   
+.time-position {
+    position: relative;
+    top: 0px;
+    left: 18px;
+    font-size: 28px;
+}
+
+.button-position {
+    position: relative;
+}
+
+.button-position:nth-child(5) {
+    left: 30px;
+    top: -86px;
+}
+
+.button-position:nth-child(6) {
+    left: 30px;
+    top: -86px;
+}
+
+.button-position:nth-child(7) {
+    left: 30px;
+    top: -86px;
+}
+
+.button-position:nth-child(8) {
+    left: 60px;
+    top: -173px;
+}
+
+.button-position:nth-child(9) {
+    left: 60px;
+    top: -173px;
+}
+
+.button-position:nth-child(10) {
+    left: 60px;
+    top: -173px;
+}
+
+/*Transform*/
+
+#phone-transform {
+    transform: translate(160px, -200px);
+}
+
+.screen-transform {
+    width: 98px;
+    height: 85px;
+    transform: translate(5px, 5px);
+    position: relative;
+    border-radius: 10%;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.time-transform {
+    position: relative;
+    transform: translate(18px, 0px);
+    font-size: 28px;
+}
+
+.button-transform {
+    position: relative;
+}
+
+.button-transform:nth-child(5) {
+    transform: translate(30px, -86px);
+}
+
+.button-transform:nth-child(6) {
+    transform: translate(30px, -86px);
+}
+
+.button-transform:nth-child(7) {
+    transform: translate(30px, -86px);
+}
+
+.button-transform:nth-child(8) {
+    transform: translate(60px, -173px);
+}
+
+.button-transform:nth-child(9) {
+    transform: translate(60px, -173px);
+}
+
+.button-transform:nth-child(10) {
+    transform: translate(60px, -173px);
+}
