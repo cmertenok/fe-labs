@@ -30,7 +30,7 @@ let startWidth = 700;
 const step = 100;
 
 function addPicture() {
-    image.src = '/img/chernihiv.jpg'
+    image.src = 'https://otdihnavse100.com.ua/1504/ekskursiya-v-chernigov-iz-kieva.jpg';
     image.style.display = '';
 }
 
