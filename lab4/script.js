@@ -1,13 +1,15 @@
 'use strict';
+
 /* Task 1 */
+
 const elemetId = document.getElementById('task1');
 const elemetClass = document.querySelector('.task1');
 
-function generateRandomNum() {
-    return Math.floor(Math.random() * 255);
-}
-
 function generateRandomColor() {
+    function generateRandomNum() {
+        return Math.floor(Math.random() * 255);
+    }
+
     return `rgb(${generateRandomNum()},${generateRandomNum()},${generateRandomNum()})`;
 }
  
@@ -22,3 +24,26 @@ function paintSecond() {
 }
 
 /* Task 2 */
+
+const image = document.getElementById('picture');
+let startWidth = 700;
+const step = 100;
+
+function addPicture() {
+    image.src = '/img/chernihiv.jpg'
+    image.style.display = '';
+}
+
+function deletePicture() {
+    image.style.display = 'none';
+}
+
+function increase() {
+    startWidth += step;
+    image.style.width = `${startWidth}px`;
+}
+
+function decrease() {
+    startWidth -= step;
+    image.style.width = `${startWidth}px`;
+}

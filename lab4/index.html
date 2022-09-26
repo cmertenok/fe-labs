@@ -5,6 +5,15 @@
     <meta name="keywords" content="Крутіков, ІП-05, Артем">
     <meta name="description" content="Лабораторна 1, Крутіков Артем">
     <title>Крутіков А.В. ІП-05 лаб.1 66 варіант</title>
+    <style>
+        .btn {
+            font-size: 20px;
+        }
+    
+        #picture {
+            width: 700px;
+        }
+    </style>
 </head>
 <body>
     <h2>Крутіков Артем Вячеславович</h2>
@@ -24,12 +33,12 @@
         <li>«Оно», 2017</li>
         <li>«Интерстеллар», 2014</li>
     </ol>
-    <p id="task1" onclick="paintFirst()">
+    <p id="task1" style="font-weight: bold;" onclick="paintFirst()">
         Амстердам (нідерл. Amsterdam) - столиця і найбільше місто Нідерландів. Є столицею королівства з 1814 року. 
         Розташований у провінції Північна Голландія на заході країни у гирлі річок Амстел та Ей. 
         Амстердам з'єднаний Нордзе-каналом із Північним морем.
     </p>
-    <p class="task1" onclick="paintSecond()">У XII столітті це було невелике рибальське село.</p>
+    <p class="task1" style="font-weight: bold;" onclick="paintSecond()">У XII столітті це було невелике рибальське село.</p>
     <p>
         у 27 жовтня 1275 — перша документальна згадка про місто відноситься до,<br>
         у 1489 році — Максиміліан I на подяку за заслуги та позики дарував Амстердаму право прикрасити свій герб королівською короною,<br>
@@ -37,6 +46,13 @@
         у 1814 році — став столицею королівства.
     </p>
     <a href="https://traveller-eu.ru/amsterdam"><img src="img/amster1.jpg"></a>
+    <div><img id="picture"></div>
+    <div>
+        <button class="btn" onclick="addPicture()">Додати</button>
+        <button class="btn" onclick="increase()">Збільшити</button>
+        <button class="btn" onclick="decrease()">Зменшити</button>
+        <button class="btn" onclick="deletePicture()">Видалити</button>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
