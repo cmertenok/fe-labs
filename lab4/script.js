@@ -30,7 +30,7 @@ let startWidth = 700;
 const step = 100;
 
 function addPicture() {
-    image.src = '/img/chernihiv.jpg'
+    image.src = 'https://raw.githubusercontent.com/cmertenok/fe-labs/main/lab4/img/chernihiv.jpg';
     image.style.display = '';
 }
 
