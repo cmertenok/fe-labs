@@ -2,8 +2,8 @@
 
 const body = document.querySelector("body");
 const answersDiv = document.createElement("div");
-const answers = [];
-const wrongAnswers = [];
+let answers = [];
+let wrongAnswers = [];
 let isValid = true;
 
 function clear() {
