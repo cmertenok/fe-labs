@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: Raleway, sans-serif;
+  line-height: 1.2;
+  background-color: $bg-color;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 $container-side-padding;
+  margin: 0 auto;
+
+  @media(max-width: 992px) {
+    max-width: 720px;
+  }
+
+}

@@ -1,0 +1,190 @@
+@media (max-width: 992px) {
+  .our-achievements {
+    &__stats {
+      padding: 30px 80px 0;
+    }
+  }
+
+  .trusting-brands {
+    &__brand-image {
+      flex: 1 1 33.3%;
+    }
+  }
+
+  .far-far-away-0 {
+    &__image {
+      flex: 0 0 100%;
+    }
+
+    &__block {
+      margin-top: 40px;
+      flex: 0 0 100%;
+    }
+  }
+
+  .far-far-away-1 {
+    padding-top: 80px;
+
+    &__box {
+      padding: 50px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+    &__block-item {
+      flex: 0 0 100%;
+
+      &-title {
+        margin-top: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
+  .far-far-away-2 {
+    &__block-item {
+      flex: 0 0 100%;
+    }
+  }
+
+  .far-far-away-3 {
+    &__image, &__quote-block {
+      flex: 0 0 100%;
+    }
+
+    &__quote-block {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .menu__item {
+    display: block;
+    margin: 30px 0;
+    font-size: 18px;
+  }
+
+  .navbar {
+    justify-content: start;
+
+    &__logo {
+      margin-right: auto;
+    }
+
+    &__menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, .97);
+      padding: 80px 0 0 $container-side-padding;
+      transition: left 0.3s ease 0s;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    &__menu-icon {
+      display: block;
+      margin-left: 2rem;
+      position: relative;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+      z-index: 2;
+
+      &.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+      }
+
+      &.active span {
+        transform: scale(0);
+      }
+
+      &.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translateY(50%);
+      }
+
+      & span, &::after, &::before {
+        position: absolute;
+        left: 0;
+        height: 10%;
+        width: 100%;
+        transition: all .3s ease 0s;
+        background-color: #000000;
+      }
+
+      & span {
+        top: 50%;
+        transform: scale(1) translatey(-50%);
+      }
+
+      &::before, &::after {
+        content: '';
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  .our-achievements {
+    &__stats {
+      padding: 30px 40px 0;
+    }
+  }
+
+  .trusting-brands {
+    &__brand-image {
+      flex: 1 1 50%;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .another-cool-template {
+    padding-top: 80px;
+    height: 520px;
+
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  .template-picture {
+    margin-top: -120px;
+  }
+
+  .our-achievements {
+    &__stats {
+      display: block;
+    }
+
+    &__achievement-block:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .far-far-away-0 {
+    padding-top: 80px;
+  }
+}
