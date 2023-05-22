@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гумова блокова верстка</title>
+</head>
+<body>
+    <style>
+        * {
+            text-align: center;
+        }
+        header {
+          background-color: orange;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        footer {
+          background-color: orange;
+          padding: 20px;
+          text-align: center;
+          clear: both;
+        }
+    
+        .container {
+          overflow: hidden;
+          padding-top: 20px;
+          padding-bottom: 20px; 
+        }
+    
+        .rectangle {
+          background-color: blue;
+          margin: 10px;
+          float: left;
+          width: 32%;
+          height: 500px;
+          box-sizing: border-box;
+        }
+        
+        .right {
+            float: right
+        }
+
+        .rectangle.middle {
+          position: absolute;
+          bottom: 67px; 
+          left: 33%;
+          width: 32%;
+          height: 100px;
+          background-color: red;
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <h2>1</h2>
+      </header>
+    
+      <div class="container">
+        <div class="rectangle left">
+          <h2>2</h2>
+        </div>
+    
+        <div class="rectangle middle">
+          <h2>3</h2>
+        </div>
+    
+        <div class="rectangle right">
+          <h2>4</h2>
+        </div>
+      </div>
+    
+      <footer>
+        <h2>5</h2>
+      </footer>
+</body>
+</html>
